@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delia迪莉亞 | 購物車</title>
+    <link rel="shortcut icon" href="images/delia.ico" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" height="70" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">餅乾</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block d-xl-block">
+                        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link d-lg-none d-xl-none cart_link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+    </header>
+    <section class="cart">
+        <div class="container">
+            <div class="row">
+                <div class="my_cart col-lg-8">
+                    <p>您的購物車</p>
+                    <ul>
+                        <li class="my_cart_list">
+                            <div class="row align-items-center">
+                                <div class="cart_product_img col-md-3 col-6">
+                                    <img src="/images/product-01.jpg" alt="">
+                                </div>
+                                <div class="cart_product_data col-6">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <p class="cart_product_name">焦糖餅乾</p>
+                                            <span class="cart_product_price">NT$280</span>
+                                        </div>
+                                        <div class="cart_product_count col-md-7">
+                                            <div class="cart_product_count_d">-</div>
+                                            <div class="cart_product_count_c">2</div>
+                                            <div class="cart_product_count_a">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_product_action col-md-3">
+                                    <div class="cart_product_total">
+                                        NT$560
+                                        <div class="cart_product_delete"><i class="far fa-trash-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="my_cart_list">
+                            <div class="row align-items-center">
+                                <div class="cart_product_img col-md-3 col-6">
+                                    <img src="/images/product-01.jpg" alt="">
+                                </div>
+                                <div class="cart_product_data col-6">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <p class="cart_product_name">焦糖餅乾</p>
+                                            <span class="cart_product_price">NT$280</span>
+                                        </div>
+                                        <div class="cart_product_count col-md-7">
+                                            <div class="cart_product_count_d">-</div>
+                                            <div class="cart_product_count_c">2</div>
+                                            <div class="cart_product_count_a">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart_product_action col-md-3">
+                                    <div class="cart_product_total">
+                                        NT$560
+                                        <div class="cart_product_delete"><i class="far fa-trash-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order_data col-lg-4">
+                    <div class="order_price">
+                        <p>訂單摘要</p>
+                        <div>
+                            小計
+                            <span>NT$ 1,111</span>
+                        </div>
+                        <div>
+                            運費
+                            <span>NT$ 90</span>
+                        </div>
+                        <div class="order_price_total">
+                            總計
+                            <span>NT$ 1,111</span>
+                        </div>
+                    </div>
+                    <div class="btn_box">
+                        <button class="btn btn-main order_buy">結帳</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="mail_box">
+            <div class="container">
+                <div class="mail_txt">訂閱你我的甜蜜郵件</div>
+                <div class="mail_input">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email">
+                    <button type="submit" class="mail_btn">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="contact_box">
+            <div class="container">
+                <img src="images/logo1.png" width="150" alt="">
+                <p>02-1234-5678 / nina.kuo@delia.com<br/>814 台北市幸福區忠孝東路四段115號</p>
+                <div class="contact_bottom">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-line"></i>
+                    <i class="fab fa-instagram"></i>
+                    <div>© 2018 Delia* All Rights Reserved</div>
+                </div>
+            </div>
+        </section>
+    </footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue.min.js"></script>
+</body>
+</html>
