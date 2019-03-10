@@ -9836,6 +9836,7 @@ a.text-main:hover, a.text-main:focus {
 
 body {
   padding-top: 97px;
+  font-family: '微軟正黑體';
 }
 
 header {
@@ -9915,6 +9916,7 @@ header .navbar > div .cart_link {
   letter-spacing: 3px;
   font-size: 1.5em;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
@@ -10002,6 +10004,7 @@ header .navbar > div .cart_link {
 }
 
 .index_title p {
+  font-weight: bold;
   margin: 0 auto;
   font-size: 1.5em;
   color: #3e4377;
@@ -10134,13 +10137,18 @@ footer .mail_box > div .mail_input input {
   background-color: transparent;
   border: 0;
   line-height: initial;
-  width: 280px;
-  margin: 0 55px;
+  padding-left: 55px;
   height: 57px;
 }
 
 footer .mail_box > div .mail_input input:focus {
   outline: none;
+}
+
+@media (min-width: 768px) {
+  footer .mail_box > div .mail_input input {
+    width: 380px;
+  }
 }
 
 footer .mail_box > div .mail_input .mail_btn {
@@ -10150,7 +10158,8 @@ footer .mail_box > div .mail_input .mail_btn {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 18px 20px;
+  width: 57px;
+  height: 57px;
   background-color: #ff9900;
   color: #d30d5c;
 }
@@ -10173,7 +10182,7 @@ footer .contact_box p {
 }
 
 footer .contact_box .contact_bottom {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   color: #3e4377;
 }
 
@@ -10185,6 +10194,8 @@ footer .contact_box .contact_bottom i {
 
 footer .contact_box .contact_bottom div {
   float: right;
+  font-size: 0.8em;
+  margin-top: 8px;
 }
 
 .cart {
@@ -10240,7 +10251,6 @@ footer .contact_box .contact_bottom div {
 
 .cart .my_cart ul .my_cart_list .cart_product_data .cart_product_name {
   font-size: 1.2em;
-  font-weight: 300;
   margin-bottom: 0;
   color: #d30d5c;
 }
@@ -10271,7 +10281,7 @@ footer .contact_box .contact_bottom div {
   text-align: center;
   line-height: 50px;
   font-size: 1.2em;
-  color: #f782b1;
+  color: #d30d5c;
 }
 
 @media (min-width: 768px) {
@@ -10294,6 +10304,7 @@ footer .contact_box .contact_bottom div {
   border-top: 1px solid #fde2ed;
   border-bottom: 1px solid #fde2ed;
   text-align: right;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -10340,10 +10351,6 @@ footer .contact_box .contact_bottom div {
     background-color: #3e4377;
     color: #fde2ed;
   }
-}
-
-.cart .order_data .order_price div {
-  font-weight: 300;
 }
 
 .cart .order_data .order_price div span {

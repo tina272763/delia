@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Delia迪莉亞 | 手工喜餅禮盒</title>
-    <link rel="shortcut icon" href="images/delia.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
+<div id="app">
     <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -42,12 +43,7 @@
     <section class="index_slide">
         <div class="container">
             <div id="slide" class="slide" alt="star">
-                <!-- 轮播图片数量可自行增减 -->
-                <div class="img"><img src="images/slide-1.jpg"/></div>
-                <!-- <div class="img"><img src="images/slide-2.jpg"/></div> -->
-                <div class="img"><img src="images/slide-3.jpg"/></div>
-                <div class="img"><img src="images/slide-4.jpg"/></div>
-                <div class="img"><img src="images/slide-5.jpg"/></div>
+                <div class="img" v-for="slide in slides"><img :src="slide"/></div>
                 <div class="slide-bt"></div>
             </div>
         </div>
@@ -57,7 +53,7 @@
             <div class="row">
                 <div class="col-lg-6 advertising_img">
                     <div><img src="images/adv01.jpg"></div>
-                    <div><img src="images/Teaser_Kekse-ohne-backen_iStock_000077522775_XXXLarge.jpg"></div>
+                    <div><img src="images/adv11.jpg"></div>
                 </div>
                 <div class="col-lg-6 advertising_txt">
                     <p>精選自然食材，<br />  精心揉捻細節。</p>
@@ -79,33 +75,13 @@
     <section class="product">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 product_item">
+                <div class="col-md-4 product_item" v-for="product in products">
                     <div class="product_star">本日精選</div>
                     <i class="far fa-heart"></i>
-                    <img src="images/product-04.jpg" alt="">
+                    <img :src="product.img" alt="">
                     <div class="product_box">
-                        <div class="product_name">焦糖餅乾</div>
-                        <div class="product_price">NT$280</div>
-                    </div>
-                    <button class="btn btn-buy product_add">加入購物車</button>
-                </div>
-                <div class="col-md-4 product_item">
-                    <div class="product_star">本日精選</div>
-                    <i class="far fa-heart"></i>
-                    <img src="images/product-03.jpg" alt="">
-                    <div class="product_box">
-                        <div class="product_name">焦糖餅乾</div>
-                        <div class="product_price">NT$280</div>
-                    </div>
-                    <button class="btn btn-buy product_add">加入購物車</button>
-                </div>
-                <div class="col-md-4 product_item">
-                    <div class="product_star">本日精選</div>
-                    <i class="far fa-heart"></i>
-                    <img src="images/product-01.jpg" alt="">
-                    <div class="product_box">
-                        <div class="product_name">焦糖餅乾</div>
-                        <div class="product_price">NT$280</div>
+                        <div class="product_name">{{product.name}}</div>
+                        <div class="product_price">NT${{product.price}}</div>
                     </div>
                     <button class="btn btn-buy product_add">加入購物車</button>
                 </div>
@@ -138,9 +114,11 @@
             </div>
         </section>
     </footer>
+</div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/vue.min.js"></script>
+<script src="js/index.js"></script>
 <script>
       
 var autoLb = true;          //autoLb=true为开启自动轮播

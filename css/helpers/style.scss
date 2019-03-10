@@ -29,6 +29,7 @@ $auxiliary-color-2: #3e4377;
 
 body{
     padding-top: 97px;
+    font-family: '微軟正黑體';
 }
 
 header{
@@ -94,6 +95,7 @@ header{
             letter-spacing: 3px;   
             font-size: 1.5em;
             margin-bottom: 0;
+            font-weight: bold;
             @media (min-width: 992px) {
                 font-size: 2.3em;
                 margin-top: -30px;
@@ -163,6 +165,7 @@ header{
             writing-mode: vertical-rl;
             font-size: 2em;
         }
+        font-weight: bold;
         margin: 0 auto;
         font-size: 1.5em;
         color: $auxiliary-color-2;
@@ -260,16 +263,19 @@ footer{
                 }
                 input{
                     @include input_default;
-                    width: 280px;
-                    margin: 0 55px;
+                    padding-left: 55px;
                     height: 57px;
+                    @media (min-width: 768px) {
+                        width: 380px;
+                    }
                 }
                 .mail_btn{
                     @include input_default;
                     position: absolute;
                     top: 0;
                     right: 0;
-                    padding: 18px 20px;
+                    width: 57px;
+                    height: 57px;
                     background-color: $auxiliary-color-1;
                     color: $main-color;
                 }
@@ -286,7 +292,7 @@ footer{
             margin-bottom: 15px;
         }
         .contact_bottom{
-            padding-bottom: 10px;
+            padding-bottom: 8px;
             color: $auxiliary-color-2;
             i{
                 font-size: 1.8em;
@@ -295,6 +301,8 @@ footer{
             }
             div{
                 float: right;
+                font-size: 0.8em;
+                margin-top: 8px;
             }
         }
     }
@@ -341,7 +349,7 @@ footer{
                 .cart_product_data{
                     .cart_product_name{
                         font-size: 1.2em;
-                        font-weight: 300;
+                        // font-weight: 300;
                         margin-bottom: 0;
                         color: $main-color;
                     }
@@ -361,7 +369,7 @@ footer{
                             text-align: center;
                             line-height: 50px;
                             font-size: 1.2em;
-                            color: $main-color-30;
+                            color: $main-color;
                             @media (min-width: 768px) {
                                 width: 50px;
                                 height: 50px;
@@ -382,6 +390,7 @@ footer{
                         border-top: 1px solid $main-color-50;
                         border-bottom: 1px solid $main-color-50;
                         text-align: right;
+                        font-weight: bold;
                         @media (min-width: 768px) {
                             border: none;
                             text-align: left;
@@ -422,7 +431,7 @@ footer{
                 }
             }
             div{
-                font-weight: 300;
+                // font-weight: 300;
                 span{
                     text-align: right;
                     float: right;
